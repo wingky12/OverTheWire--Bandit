@@ -1,1 +1,70 @@
 
+
+https://overthewire.org/wargames/bandit/bandit0.html
+
+bandit 0
+
+
+ssh bandit.labs.overthewire.org
+port 2220
+user bandit0
+pass bandit0
+
+
+bandit0@bandit:~$ ls
+readme
+bandit0@bandit:~$ cat readme
+Congratulations on your first steps into the bandit game!!
+Please make sure you have read the rules at https://overthewire.org/rules/
+If you are following a course, workshop, walthrough or other educational activity,
+please inform the instructor about the rules as well and encourage them to
+contribute to the OverTheWire community so we can keep these games free!
+
+The password you are looking for is: ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
+
+
+level 1-2
+cat ./-
+263JGJPfgU6LtdEvgfWU1XP5yac29mFx
+
+level 2-3
+bandit2@bandit:~$ cat 'spaces in this filename'
+MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
+
+level 3-4
+user : bandit3
+------------------
+bandit3@bandit:~/inhere$ ls -lah
+total 12K
+drwxr-xr-x 2 root    root    4.0K Jun 20 04:07 .
+drwxr-xr-x 3 root    root    4.0K Jun 20 04:07 ..
+-rw-r----- 1 bandit4 bandit3   33 Jun 20 04:07 ...Hiding-From-You
+bandit3@bandit:~/inhere$ cat ...Hiding-From-You
+2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
+bandit3@bandit:~/inhere$
+
+
+level 4
+bandit4@bandit:~/inhere$ file ./*
+./-file00: data
+./-file01: data
+./-file02: data
+./-file03: data
+./-file04: data
+./-file05: data
+./-file06: data
+./-file07: ASCII text
+./-file08: data
+./-file09: data
+bandit4@bandit:~/inhere$ file ./-file07
+./-file07: ASCII text
+bandit4@bandit:~/inhere$ cat ./-file07
+4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
+bandit4@bandit:~/inhere$
+
+level 5
+bandit5@bandit:~/inhere$ find -type f -size 1033c
+./maybehere07/.file2
+bandit5@bandit:~/inhere$ cat ./maybehere07/.file2
+HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
+
